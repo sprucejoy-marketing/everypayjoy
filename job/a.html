@@ -124,7 +124,7 @@
                     ],
                     emailRules: [
                         v => !!v || 'Email is required',
-                        v => /.+@.+/.test(v) || 'Email must be valid'
+                        v => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v) || 'Email must be valid'
                     ],
                     show_q: true,
                     show_l: true,
@@ -132,6 +132,11 @@
                 }
             },
             methods: {
+                validateEmail(v) {
+                    // eslint-disable-next-line
+                    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(String(v).toLowerCase());
+                },
                 getUrlVars() {
                     var vars = {};
                     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -169,7 +174,7 @@
                     return encodeURI(q1)
                 },
                 checkdisabled() {
-                    if(this.form['email'] !='' && this.form['zipcode'] != '' && this.form['q'] != '') this.disabled = false;
+                    if(this.form['email'] !='' && this.validateEmail(this.form.email) && this.form['zipcode'] != '' && this.form['q'] != '') this.disabled = false;
                     else this.disabled = true;
                 }
             },
