@@ -144,6 +144,7 @@
                     this.loading.subscribe = true;
                     axios.post('https://api.apply-now.io/api/v1/subscription/addq', this.form)
                             .then((response) => {
+                                localStorage.setItem('RU', response.data.email);
                                 window.location.href = "/job/e.html?q=" + decodeURI(this.getUrlVars()['q'])
                             }).catch(function (error) {
                                 that.show.errorSnackbar = true;
@@ -179,6 +180,10 @@
                 if('t' in vars) this.title = decodeURI(this.getUrlVars()['t']);
                 // if(this.form['q'] != '') this.show_q = false
                 // if(this.form['zipcode'] != '') this.show_l = false
+                var RU = localStorage.getItem('RU');
+                if (RU) {
+                    window.location.href = "/job/e.html?q=" + decodeURI(this.getUrlVars()['q'])
+                }
             }
         })
     </script>
