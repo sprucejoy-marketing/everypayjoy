@@ -52,7 +52,7 @@
       var PollfishIsLoaded = false;
       var pollfishConfig = {
         api_key: "690707d4-09cb-4ef6-8264-de1f1641d0d2",
-        debug: true,
+        debug: false,
         ready: pollfishReady,
         indicator_position: "BOTTOM_RIGHT",
         survey_format: 3  ,
@@ -153,7 +153,12 @@
                                     </v-flex>
                                 </template>
                             </v-layout>
-
+                            <v-layout align-center justify-center>
+                                <v-btn 
+                                class="primary"
+                                onclick="Pollfish.showFullSurvey()">Survey
+                                </v-btn>
+                            </v-layout>
                         </v-flex>
 
                         <v-dialog v-model="dialog" persistent max-width="300" class="round-list ">
@@ -188,7 +193,6 @@
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
-                        <a onclick="Pollfish.showFullSurvey()">Click</a>
                     </v-container>
                 </v-layout>
             </v-content>
