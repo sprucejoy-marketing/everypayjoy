@@ -48,6 +48,25 @@
 
         gtag('config', 'UA-132235786-5');
     </script>
+    <script>
+      var PollfishIsLoaded = false;
+      var pollfishConfig = {
+        api_key: "690707d4-09cb-4ef6-8264-de1f1641d0d2",
+        debug: true,
+        ready: pollfishReady,
+        indicator_position: "BOTTOM_RIGHT",
+        survey_format: 3  ,
+        offerwall:false     
+      };
+      function pollfishReady(){
+        PollfishIsLoaded = true;
+        // Pollfish Webplugin is ready, so you can call it excplicitly using the Pollfish.showIndicator or Pollfish.showFullSurvey functions
+        // Pollfish.showIndicator();
+        // Pollfish.showFullSurvey();
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://storage.googleapis.com/pollfish_production/sdk/webplugin/pollfish.min.js"></script>
 
 
 </head>
@@ -169,6 +188,7 @@
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
+                        <a onclick="Pollfish.showFullSurvey()">Click</a>
                     </v-container>
                 </v-layout>
             </v-content>
