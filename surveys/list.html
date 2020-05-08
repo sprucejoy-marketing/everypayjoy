@@ -49,20 +49,20 @@
         gtag('config', 'UA-132235786-5');
     </script>
     <script>
-      var PollfishIsLoaded = false;
-      var pollfishConfig = {
-        api_key: "690707d4-09cb-4ef6-8264-de1f1641d0d2",
-        debug: true,
-        ready: pollfishReady,
-        indicator_position: "BOTTOM_RIGHT",
-        survey_format: 2,
-      };
-      function pollfishReady(){
-        PollfishIsLoaded = true;
-        // Pollfish Webplugin is ready, so you can call it excplicitly using the Pollfish.showIndicator or Pollfish.showFullSurvey functions
-        // Pollfish.showIndicator();
-        // Pollfish.showFullSurvey();
-      }
+        var PollfishIsLoaded = false;
+        var pollfishConfig = {
+            api_key: "690707d4-09cb-4ef6-8264-de1f1641d0d2",
+            debug: true,
+            ready: pollfishReady,
+            indicator_position: "BOTTOM_RIGHT",
+            survey_format: 2,
+        };
+        function pollfishReady(){
+            PollfishIsLoaded = true;
+            // Pollfish Webplugin is ready, so you can call it excplicitly using the Pollfish.showIndicator or Pollfish.showFullSurvey functions
+            // Pollfish.showIndicator();
+            // Pollfish.showFullSurvey();
+        }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://storage.googleapis.com/pollfish_production/sdk/webplugin/pollfish.min.js"></script>
@@ -157,6 +157,9 @@
                                 class="primary"
                                 onclick="Pollfish.showFullSurvey()">Survey
                                 </v-btn>
+                                Grove Collaborative
+                                <a href="https://viglink.com/?vgref=434433">VigLink</a> 
+                                <a href="https://www.viglink.com/legal/consumer-disclosure/?vgtag=badge"><img title="Links monetized by VigLink" src="https://www.viglink.com/images/badges/88x31.png" alt="VigLink badge" width="88" height="31" /></a>
                             </v-layout>
                         </v-flex>
 
@@ -272,6 +275,17 @@
                 });
             }
         })
+    </script>
+    <script type="text/javascript">
+        var vglnk = {key: 'aad15c1542ceb85410b7b624c62143d5'};
+        (function(d, t) {
+            var s = d.createElement(t);
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//cdn.viglink.com/api/vglnk.js';
+            var r = d.getElementsByTagName(t)[0];
+                r.parentNode.insertBefore(s, r);
+        }(document, 'script'));
     </script>
 </body>
 
