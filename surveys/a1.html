@@ -172,7 +172,7 @@
           axios.post('https://api.apply-now.io/api/v1/subscription/addq', this.form)
             .then((response) => {
               localStorage.setItem('RU', response.data.email);
-              window.location.href = "/surveys/list.html"
+              window.location.href = "/surveys/e.html"
             }).catch(function (error) {
               that.show.errorSnackbar = true;
               if (error.response.data.message) {
@@ -196,7 +196,7 @@
           return encodeURI(q1)
         },
         checkdisabled() {
-          if (this.form['email'] != '' && this.validateEmail(this.form.email) && this.form['zipcode'] != '' && this.form['q'] != '') this.disabled = false;
+          if (this.form['email'] != '' && this.validateEmail(this.form.email) && this.form['q'] != '') this.disabled = false;
           else this.disabled = true;
         }
       },
