@@ -466,7 +466,7 @@
           return encodeURI(q1)
         },
         checkdisabled() {
-          if (this.form['email'] != '' && this.validateEmail(this.form.email) && this.form['zipcode'] != '' && this.form['q'] != '') this.disabled = false;
+          if (this.form['email'] != '' && this.validateEmail(this.form.email) && this.form['q'] != '') this.disabled = false;
           else this.disabled = true;
         }
       },
