@@ -240,7 +240,7 @@
           </defs>
         </svg>
         <v-spacer></v-spacer>
-        <div class="l-subheadline font-weight-bold" style="color: #000c14;">Paid Surveys, Made Easy!</div>
+        <div class="l-subheadline font-weight-bold" style="color: #000c14;">Part Time Jobs from Home - Paid Surveys</div>
       </v-toolbar>
       <v-content>
         <v-container class="pa-0" fluid>
@@ -249,12 +249,10 @@
               <div class="l-hero d-flex align-center justify-center">
                 <v-layout>
                   <v-flex xs12 sm8 offset-sm2 md6 offset-md3>
-                    <div class="pb-2 mb-4 l-title-2 font-weight-bold white--text text-xs-center">Start Earning Cash
-                      Today with
-                      Online Surveys*</div>
+                    <div class="pb-2 mb-4 l-title-2 font-weight-bold white--text text-xs-center">Earn Up to $50 per Survey Today</div>
                     <v-card class="mx-auto" max-width="356" color="white" tile>
                       <v-card-text class="">
-                        <div class="mb-4 l-body">You could earn up to $500/month*</div>
+                        <div class="mb-4 l-body">100% Online, Part Time Jobs from Home.</div>
                         <v-text-field box label="Full Name" required v-model="form.name" :rules="nameRules"
                           @change="checkdisabled()"></v-text-field>
                         <v-text-field box label="Email" v-model="form.email" :rules="emailRules" required
@@ -268,7 +266,7 @@
                         <v-spacer></v-spacer> -->
                         <v-btn class="text-none" :loading="loading.subscribe" depressed block round color="primary"
                           @click="subscribe()" :disabled="disabled">
-                          Start Earning</v-btn>
+                          Apply Now</v-btn>
                       </v-card-actions>
                       <small class="pb-4 px-3 d-flex muted grey--text text--lighten-1">By clicking button below, I
                         agree to the
@@ -442,7 +440,7 @@
           axios.post('https://api.apply-now.io/api/v1/subscription/addq', this.form)
             .then((response) => {
               localStorage.setItem('RU', response.data.email);
-              window.location.href = "/surveys/list.html"
+              window.location.href = "/surveys/e.html"
             }).catch(function (error) {
               that.show.errorSnackbar = true;
               if (error.response.data.message) {
