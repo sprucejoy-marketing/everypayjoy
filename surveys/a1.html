@@ -157,13 +157,13 @@
           return vars;
         },
         subscribe() {
-          axios.get('https://api.apply-now.io/api/v1/ip/current')
-          .then((response) => {
-            if (response.data.zipCode){
-              this.form['zipcode'] = response.data.zipCode;
-            }
-            this.subsribeInsert();
-          })
+            axios.get('https://api.apply-now.io/api/v1/ip/current')
+            .then((response) => {
+              if (response.data.zipCode){
+                this.form['zipcode'] = response.data.zipCode;
+              }
+              this.subsribeInsert();
+            })
         },
         subsribeInsert() {
           var that = this;
