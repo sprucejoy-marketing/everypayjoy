@@ -428,14 +428,6 @@
           return vars;
         },
         subscribe() {
-          /*
-          axios.get('http://api.ipstack.com/check?access_key=8a774b8e7cec2966f7952d19a9d38118')
-            .then((response) => {
-              if (response.data.zip)
-                this.form['zipcode'] = response.data.zip;
-              this.subsribeInsert();
-            })
-            */
             axios.get('https://api.apply-now.io/api/v1/ip/current')
             .then((response) => {
               if (response.data.zipCode){
