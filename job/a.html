@@ -47,11 +47,11 @@
                                         </v-card-title>
                                         <v-card-text>
                                             <p>Directions: </p>
-                                            <p>after submitting name & email you will be directed to the application. </p>
+                                            <p>after submitting name & email, you will be directed to the application. </p>
                                                  
                                             <p>{{ title }}</p>
                                                 ​
-                                                <p>Application are replied to on a first come, first serve basis. </p>
+                                                <p>1. complete application on next page (first come, first serve)</p>
                                             <!-- <v-select :items="positions" label="Positions" box chips multiple v-model='k'></v-select> -->
                                             <v-text-field box label="Full Name" required v-model="form.name" :rules="nameRules" @change="checkdisabled()"></v-text-field>
                                             <v-text-field box label="Email" v-model="form.email" :rules="emailRules" required @change="checkdisabled()">
