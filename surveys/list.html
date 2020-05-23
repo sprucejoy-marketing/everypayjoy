@@ -175,6 +175,19 @@
                                 onclick="Pollfish.showFullSurvey()">Survey
                                 </v-btn>
                             </v-layout>
+                            <v-footer class="justify-center" color="white">
+                              <div class="l-footnote" style="color: #858e99;">
+                                &copy;{{ new Date().getFullYear() }} OpinionJoy
+                              </div>
+                              <v-btn href="https://www.everypayjoy.com/legal/" target="_blank" class="text-none l-footnote"
+                                color="#858e99" small flat round>
+                                Privacy &amp; Terms
+                              </v-btn>
+                              <v-btn href="https://www.everypayjoy.com/supports/contact/" target="_blank" class="text-none l-footnote"
+                                color="#858e99" small flat round>
+                                Contact
+                              </v-btn>
+                            </v-footer>
                         </v-flex>
 
                         <v-dialog v-model="dialog" persistent max-width="300" class="round-list ">

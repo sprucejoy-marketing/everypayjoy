@@ -132,7 +132,7 @@
                 <!-- <div style="padding-top:30px;"><b>Popular Employers</b></div> -->
 
                 <article>
-                    <v-button class="success py-1 px-1 white--text">Advertisement</v-button>
+                  <v-button class="success py-1 px-1 white--text">Advertisement</v-button>
                   <div>
                     <h1 class="headline__main body1">
                       The Real Reason Survey Sites Are Offering Cash Rewards For Americans'
@@ -373,7 +373,8 @@
                         <v-btn class="primary primary--text" outline href="/surveys/a.html?utm_source=taboola_article">
                           <div class="my-4 d-flex">
                             <svg style="width:48px;height:48px" viewBox="0 0 24 24">
-                              <path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17V16H9V14H13V13H10A1,1 0 0,1 9,12V9A1,1 0 0,1 10,8H11V7H13V8H15V10H11V11H14A1,1 0 0,1 15,12V15A1,1 0 0,1 14,16H13V17H11Z" />
+                              <path fill="currentColor"
+                                d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17V16H9V14H13V13H10A1,1 0 0,1 9,12V9A1,1 0 0,1 10,8H11V7H13V8H15V10H11V11H14A1,1 0 0,1 15,12V15A1,1 0 0,1 14,16H13V17H11Z" />
                             </svg>
                           </div>
                           <div class="l-btn-text">Earn money</div>
@@ -643,6 +644,19 @@
                     title="Links monetized by VigLink" src="https://www.viglink.com/images/badges/88x31.png"
                     alt="VigLink badge" width="88" height="31" /></a>
               </v-layout> -->
+                <v-footer class="justify-center" color="white">
+                  <div class="l-footnote" style="color: #858e99;">
+                    &copy;{{ new Date().getFullYear() }} OpinionJoy
+                  </div>
+                  <v-btn href="https://www.everypayjoy.com/legal/" target="_blank" class="text-none l-footnote"
+                    color="#858e99" small flat round>
+                    Privacy &amp; Terms
+                  </v-btn>
+                  <v-btn href="https://www.everypayjoy.com/supports/contact/" target="_blank"
+                    class="text-none l-footnote" color="#858e99" small flat round>
+                    Contact
+                  </v-btn>
+                </v-footer>
             </v-flex>
 
             <v-dialog v-model="dialog" persistent max-width="300" class="round-list ">
