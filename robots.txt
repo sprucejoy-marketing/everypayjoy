@@ -1,12 +1,8 @@
-
 User-agent: *
-Disallow: /
-
-User-agent: Mediapartners-Google
+Disallow: /lp/
 Allow: /
 
-User-agent: AdsBot-Google
-User-agent: adidxbot
+User-agent: Mediapartners-Google
 Allow: /
 
 User-agent: 008
@@ -19,4 +15,34 @@ User-Agent: OmniExplorer_Bot
 Disallow: /
 
 User-agent: Cliqzbot
+Disallow: /
+
+User-agent: PaperLiBot
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Facebot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AspiegelBot
+Disallow: /
+
+User-agent: coccocbot
 Disallow: /
